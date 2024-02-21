@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div style="text-align: center;"> <!-- Centrer l'image horizontalement -->
+    <img src="file:///D:/Projet_Arduino/images/logo.png" alt="Logo" style="width: 140px; height: auto;"> <!-- Chemin local vers l'image -->
+  </div>
+
+  <br>
+
+  <div class="partie">
+    <h2><img src="file:///D:/Projet_Arduino/images/gyrophare.png" alt="Gyrophare" style="width: 15px; height: auto;">  Alerte Infraction  <img src="file:///D:/Projet_Arduino/images/gyrophare.png" alt="Gyrophare" style="width: 15px; height: auto;"></h2>
+
+    <div class="encadre">
+      <div class="sous-partie">
+        <h3>Détection de mouvements</h3>
+        <div id="mouvement">
+          <p id="mouvement-message">Aucun mouvement n'a été détecté.</p>
+        </div>
+        <button id="mouvement-resolu-btn" onclick="resoudreProbleme('mouvement')" style="display: none;">Problème résolu</button>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="encadre">
+      <div class="sous-partie">
+        <h3>Détection de franchissement du laser</h3>
+        <div id="franchissement">
+          <p id="franchissement-message">Aucun franchissement n'a été détecté.</p>
+        </div>
+        <button id="franchissement-resolu-btn" onclick="resoudreProbleme('franchissement')" style="display: none;">Problème résolu</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="partie">
+    <h2><img src="file:///D:/Projet_Arduino/images/extincteur.png" alt="Extincteur" style="width: 20px; height: auto;">  Alerte Incendie  <img src="file:///D:/Projet_Arduino/images/extincteur.png" alt="Extincteur" style="width: 20px; height: auto;"></h2>
+
+    <div class="encadre">
+      <div class="sous-partie">
+        <h3>Détection d'incendie</h3>
+        <div id="incendie">
+          <p id="incendie-message">Aucun incendie n'a été détecté.</p>
+        </div>
+        <button id="incendie-resolu-btn" onclick="resoudreProbleme('incendie')" style="display: none;">Problème résolu</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <div style="text-align: center;"> <!-- Centrer l'image horizontalement -->
+    <h6 id="credit">@ Aude BOULET - Amira BOUZOURENE - Rodolph ECLIMOS</h6>
+  </div>
+
+</body>
+
+</html>
