@@ -30,9 +30,9 @@ window.onload = function() {
   resolutionButtons.forEach(function(button) {
     button.style.display = 'none';
   });
-};
+};  
 
 // Simulation code (if needed, it can be removed or commented out)
-setTimeout(function() { declencherAlerte('mouvement'); }, 5000);
-setTimeout(function() { declencherAlerte('franchissement'); }, 8000);
+setTimeout(function() { declencherAlerte('bruit'); }, 5000);
+setTimeout(function() { declencherAlerte('mouvement'); }, 8000);
 setTimeout(function() { declencherAlerte('incendie'); }, 12000);
